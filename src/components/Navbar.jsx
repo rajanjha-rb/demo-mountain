@@ -87,7 +87,7 @@ const Navbar = () => {
           aria-hidden="true"
         />
         <aside
-          className={`fixed right-0 top-0 z-50 h-dvh w-[86%] max-w-sm border-l border-[#E2E8F0] bg-white shadow-lg transition-transform duration-300 ease-out ${
+          className={`fixed right-0 top-0 z-50 h-dvh w-[85%] max-w-xs border-l border-[#E2E8F0] bg-white shadow-lg transition-transform duration-300 ease-out ${
             open ? 'translate-x-0' : 'translate-x-full'
           }`}
           aria-label="Mobile navigation"
@@ -106,13 +106,13 @@ const Navbar = () => {
             </button>
           </div>
 
-          <div className="flex flex-col gap-1 px-4 py-4 text-sm font-medium text-[#0F172A]">
+          <div className="flex flex-col gap-1 px-4 py-4 text-sm font-medium text-[#0F172A] overflow-y-auto max-h-[calc(100vh-80px)]">
             {navItems.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
                 onClick={handleNavClick}
-                className="rounded-lg px-3 py-3 transition hover:bg-[#EFF6FF]"
+                className="rounded-lg px-3 py-3 transition hover:bg-[#EFF6FF] block"
               >
                 {item.label}
               </a>
@@ -120,7 +120,7 @@ const Navbar = () => {
             <a
               href="#contact"
               onClick={handleNavClick}
-              className="mt-3 w-full rounded-full bg-[#1E3A8A] px-4 py-3 text-center text-xs font-semibold text-white shadow-md transition-colors hover:bg-[#F59E0B]"
+              className="mt-3 w-full rounded-full bg-[#1E3A8A] px-4 py-3 text-center text-xs font-semibold text-white shadow-md transition-colors hover:bg-[#F59E0B] block"
             >
               Book Your Adventure
             </a>
