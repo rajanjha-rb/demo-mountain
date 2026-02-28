@@ -115,7 +115,7 @@ const Testimonials = () => {
 
           {/* Side Testimonials */}
           <div className="space-y-6">
-            {testimonials.slice(1).map((testimonial, index) => (
+            {testimonials.slice(1).map((testimonial) => (
               <article
                 key={testimonial.name}
                 className="bg-white/10 backdrop-blur rounded-2xl p-6 border border-white/20 transition-all hover:bg-white/20 hover:scale-105"

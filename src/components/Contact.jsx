@@ -190,8 +190,6 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-              </div>
-              
               <div className="bg-gradient-to-r from-[#F59E0B] to-[#F97316] rounded-2xl p-6 text-white">
                 <div className="flex items-center gap-3 mb-4">
                   <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -233,4 +231,3 @@ const Contact = () => {
 }
 
 export default Contact
-
