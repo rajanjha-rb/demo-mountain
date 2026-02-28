@@ -2,117 +2,230 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="scroll-mt-24 py-16 md:py-20"
+      className="scroll-mt-24 bg-gradient-to-br from-white to-[#F8FAFC] py-16 md:py-20"
     >
-      <div className="grid gap-8 rounded-2xl border border-[#E2E8F0] bg-white p-4 shadow-lg shadow-slate-200/80 sm:gap-10 sm:p-6 md:grid-cols-[1.1fr,0.9fr] md:p-8">
-        <div className="space-y-4">
-          <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[#64748B]">
-            Contact
-          </p>
-          <h2 className="text-balance text-xl font-semibold tracking-tight text-[#0F172A] sm:text-2xl md:text-3xl">
-            Plan Your Nepal Journey
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="text-center space-y-6 mb-16">
+          <div className="inline-flex items-center gap-2 rounded-full border border-[#E2E8F0] bg-white px-4 py-2 text-sm font-medium text-[#64748B] shadow-sm">
+            <span className="h-2 w-2 rounded-full bg-[#F59E0B] animate-pulse" />
+            Get in Touch
+          </div>
+          <h2 className="text-balance text-4xl font-bold tracking-tight text-[#0F172A] sm:text-5xl">
+            Start Your Nepal Adventure
           </h2>
-          <p className="text-xs text-[#64748B] sm:text-sm">
-            Share your travel dates, interests, and any special requests. Our
-            travel designers will respond within 24 hours with a personalized
-            proposal.
+          <p className="mx-auto max-w-3xl text-balance text-lg text-[#64748B]">
+            Ready to explore the Himalayas? Share your travel dreams with us and let our local experts 
+            craft the perfect journey. We respond within 24 hours.
           </p>
-
-          <form className="mt-4 space-y-4 text-sm text-[#0F172A]">
-            <div className="space-y-1">
-              <label htmlFor="name" className="text-xs font-medium text-[#0F172A]">
-                Name
-              </label>
-              <input
-                id="name"
-                name="name"
-                type="text"
-                placeholder="Your full name"
-                className="w-full rounded-xl border border-[#E2E8F0] bg-white px-3 py-2 text-xs text-[#0F172A] shadow-inner shadow-slate-100 outline-none transition placeholder:text-[#94A3B8] focus:border-[#1E3A8A] focus:ring-1 focus:ring-[#1E3A8A] sm:text-sm"
-              />
-            </div>
-            <div className="space-y-1">
-              <label
-                htmlFor="email"
-                className="text-xs font-medium text-[#0F172A]"
-              >
-                Email
-              </label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                placeholder="you@example.com"
-                className="w-full rounded-xl border border-[#E2E8F0] bg-white px-3 py-2 text-xs text-[#0F172A] shadow-inner shadow-slate-100 outline-none transition placeholder:text-[#94A3B8] focus:border-[#1E3A8A] focus:ring-1 focus:ring-[#1E3A8A] sm:text-sm"
-              />
-            </div>
-            <div className="space-y-1">
-              <label
-                htmlFor="message"
-                className="text-xs font-medium text-[#0F172A]"
-              >
-                Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                rows={4}
-                placeholder="Tell us about your ideal trip, travel dates, and group size."
-                className="w-full resize-none rounded-xl border border-[#E2E8F0] bg-white px-3 py-2 text-xs text-[#0F172A] shadow-inner shadow-slate-100 outline-none transition placeholder:text-[#94A3B8] focus:border-[#1E3A8A] focus:ring-1 focus:ring-[#1E3A8A] sm:text-sm"
-              />
-            </div>
-            <button
-              type="submit"
-              className="inline-flex w-full items-center justify-center rounded-full bg-[#1E3A8A] px-4 py-2.5 text-xs font-semibold text-white shadow-md shadow-slate-300 transition-colors hover:bg-[#F59E0B] sm:w-auto sm:px-5 sm:py-3"
-            >
-              Send Inquiry
-            </button>
-            <p className="text-xs text-[#64748B]">
-              By submitting, you agree to be contacted by Himalayan Horizons
-              Travel with trip information.
-            </p>
-          </form>
         </div>
 
-        <div className="space-y-4 text-xs text-[#0F172A] sm:space-y-5 sm:text-sm">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#64748B]">
-              Kathmandu office
-            </p>
-            <p className="mt-2 text-xs text-[#0F172A] sm:text-sm">
-              Himalayan Horizons Travel Pvt. Ltd.
-            </p>
-            <p className="text-xs text-[#64748B] sm:text-sm">
-              Jyatha, Thamel, Kathmandu 44600, Nepal
-            </p>
+        <div className="grid gap-12 lg:grid-cols-2">
+          {/* Contact Form */}
+          <div className="space-y-8">
+            <div className="relative">
+              <div className="absolute -inset-1 bg-gradient-to-r from-[#1E3A8A] to-[#1E40AF] rounded-3xl opacity-10 blur"></div>
+              <div className="relative bg-white rounded-3xl p-8 shadow-lg">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="rounded-full bg-gradient-to-r from-[#1E3A8A] to-[#1E40AF] p-3">
+                    <svg className="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-[#0F172A]">Send Us a Message</h3>
+                    <p className="text-sm text-[#64748B]">We'll get back to you within 24 hours</p>
+                  </div>
+                </div>
+                
+                <form className="space-y-6">
+                  <div className="grid gap-6 sm:grid-cols-2">
+                    <div className="space-y-2">
+                      <label htmlFor="name" className="text-sm font-medium text-[#0F172A]">
+                        Your Name *
+                      </label>
+                      <input
+                        id="name"
+                        name="name"
+                        type="text"
+                        placeholder="John Doe"
+                        className="w-full rounded-xl border border-[#E2E8F0] bg-white px-4 py-3 text-sm text-[#0F172A] shadow-inner shadow-slate-100 outline-none transition placeholder:text-[#94A3B8] focus:border-[#1E3A8A] focus:ring-2 focus:ring-[#1E3A8A]/20"
+                        required
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <label
+                        htmlFor="email"
+                        className="text-sm font-medium text-[#0F172A]"
+                      >
+                        Email Address *
+                      </label>
+                      <input
+                        id="email"
+                        name="email"
+                        type="email"
+                        placeholder="john@example.com"
+                        className="w-full rounded-xl border border-[#E2E8F0] bg-white px-4 py-3 text-sm text-[#0F172A] shadow-inner shadow-slate-100 outline-none transition placeholder:text-[#94A3B8] focus:border-[#1E3A8A] focus:ring-2 focus:ring-[#1E3A8A]/20"
+                        required
+                      />
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-2">
+                    <label
+                      htmlFor="phone"
+                      className="text-sm font-medium text-[#0F172A]"
+                    >
+                      Phone Number
+                    </label>
+                    <input
+                      id="phone"
+                      name="phone"
+                      type="tel"
+                      placeholder="+1 (555) 123-4567"
+                      className="w-full rounded-xl border border-[#E2E8F0] bg-white px-4 py-3 text-sm text-[#0F172A] shadow-inner shadow-slate-100 outline-none transition placeholder:text-[#94A3B8] focus:border-[#1E3A8A] focus:ring-2 focus:ring-[#1E3A8A]/20"
+                    />
+                  </div>
+                  
+                  <div className="space-y-2">
+                    <label
+                      htmlFor="message"
+                      className="text-sm font-medium text-[#0F172A]"
+                    >
+                      Tell Us About Your Dream Trip *
+                    </label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows={5}
+                      placeholder="Share your travel dates, interests, group size, and any special requests..."
+                      className="w-full resize-none rounded-xl border border-[#E2E8F0] bg-white px-4 py-3 text-sm text-[#0F172A] shadow-inner shadow-slate-100 outline-none transition placeholder:text-[#94A3B8] focus:border-[#1E3A8A] focus:ring-2 focus:ring-[#1E3A8A]/20"
+                      required
+                    />
+                  </div>
+                  
+                  <div className="flex items-center gap-3">
+                    <input
+                      type="checkbox"
+                      id="newsletter"
+                      className="rounded border-[#E2E8F0] text-[#1E3A8A] focus:ring-[#1E3A8A]"
+                    />
+                    <label htmlFor="newsletter" className="text-sm text-[#64748B]">
+                      Send me travel tips and special offers
+                    </label>
+                  </div>
+                  
+                  <button
+                    type="submit"
+                    className="w-full rounded-full bg-gradient-to-r from-[#1E3A8A] to-[#1E40AF] px-6 py-4 text-sm font-semibold text-white shadow-lg transition-all hover:scale-105 hover:shadow-xl"
+                  >
+                    Send Message →
+                  </button>
+                  
+                  <p className="text-xs text-[#64748B] text-center">
+                    By submitting, you agree to be contacted by Himalayan Horizons Travel with trip information.
+                  </p>
+                </form>
+              </div>
+            </div>
           </div>
 
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#64748B]">
-              Phone
-            </p>
-            <p className="mt-1 text-xs text-[#0F172A] sm:text-sm">
-              +977-1-4412345 (Office)
-            </p>
-            <p className="text-xs text-[#64748B] sm:text-sm">+977-980-1234567 (24/7)</p>
-          </div>
-
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#64748B]">
-              Email
-            </p>
-            <p className="mt-1 text-xs text-[#0F172A] sm:text-sm">
-              hello@himalayanhorizons.travel
-            </p>
-          </div>
-
-          <div className="rounded-xl border border-[#E2E8F0] bg-[#F8FAFC] p-3 text-xs text-[#64748B] shadow-inner shadow-slate-100 sm:p-4">
-            <p className="font-semibold text-[#0F172A]">
-              Kathmandu time (GMT+5:45)
-            </p>
-            <p className="mt-1">
-              We typically respond within 24 hours, Monday to Saturday.
-            </p>
+          {/* Contact Information */}
+          <div className="space-y-8">
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-2xl font-bold text-[#0F172A] mb-6">Visit Our Office</h3>
+                
+                <div className="space-y-6">
+                  <div className="bg-white rounded-2xl p-6 shadow-md border border-[#E2E8F0]">
+                    <div className="flex items-start gap-4">
+                      <div className="rounded-full bg-blue-100 p-3">
+                        <svg className="h-6 w-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-[#0F172A] mb-2">Kathmandu Headquarters</h4>
+                        <p className="text-[#64748B] leading-relaxed">
+                          Himalayan Horizons Travel Pvt. Ltd.<br />
+                          Jyatha, Thamel, Kathmandu 44600<br />
+                          Nepal
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-white rounded-2xl p-6 shadow-md border border-[#E2E8F0]">
+                    <div className="flex items-start gap-4">
+                      <div className="rounded-full bg-green-100 p-3">
+                        <svg className="h-6 w-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-[#0F172A] mb-2">Phone Numbers</h4>
+                        <div className="space-y-1 text-[#64748B]">
+                          <p>Office: +977-1-4412345</p>
+                          <p>24/7 Emergency: +977-980-1234567</p>
+                          <p>WhatsApp: +977-980-1234567</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-white rounded-2xl p-6 shadow-md border border-[#E2E8F0]">
+                    <div className="flex items-start gap-4">
+                      <div className="rounded-full bg-purple-100 p-3">
+                        <svg className="h-6 w-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-[#0F172A] mb-2">Email Addresses</h4>
+                        <div className="space-y-1 text-[#64748B]">
+                          <p>General: hello@himalayanhorizons.travel</p>
+                          <p>Bookings: bookings@himalayanhorizons.travel</p>
+                          <p>Support: support@himalayanhorizons.travel</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="bg-gradient-to-r from-[#F59E0B] to-[#F97316] rounded-2xl p-6 text-white">
+                <div className="flex items-center gap-3 mb-4">
+                  <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <h4 className="font-bold">Business Hours</h4>
+                </div>
+                <div className="space-y-2 text-sm">
+                  <p><strong>Kathmandu Time (GMT+5:45)</strong></p>
+                  <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                  <p>Saturday: 10:00 AM - 4:00 PM</p>
+                  <p>Sunday: Closed</p>
+                  <p className="mt-3 text-sm opacity-90">
+                    We typically respond within 24 hours, Monday to Saturday.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="bg-gradient-to-r from-[#1E3A8A] to-[#1E40AF] rounded-2xl p-6 text-white">
+                <h4 className="font-bold mb-3">Need Quick Help?</h4>
+                <p className="text-sm mb-4 opacity-90">
+                  Chat with our travel experts instantly on WhatsApp for immediate assistance.
+                </p>
+                <a
+                  href="https://wa.me/9779801234567"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center rounded-full bg-white px-4 py-2 text-sm font-semibold text-[#1E3A8A] transition-all hover:scale-105"
+                >
+                  Chat on WhatsApp
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
