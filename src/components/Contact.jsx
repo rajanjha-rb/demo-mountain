@@ -190,37 +190,40 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-              <div className="bg-gradient-to-r from-[#F59E0B] to-[#F97316] rounded-2xl p-6 text-white">
-                <div className="flex items-center gap-3 mb-4">
-                  <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  <h4 className="font-bold">Business Hours</h4>
+
+              <div className="mt-6 sm:mt-8 space-y-6">
+                <div className="bg-gradient-to-r from-[#F59E0B] to-[#F97316] rounded-2xl p-6 text-white">
+                  <div className="flex items-center gap-3 mb-4">
+                    <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <h4 className="font-bold">Business Hours</h4>
+                  </div>
+                  <div className="space-y-2 text-sm">
+                    <p><strong>Kathmandu Time (GMT+5:45)</strong></p>
+                    <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                    <p>Saturday: 10:00 AM - 4:00 PM</p>
+                    <p>Sunday: Closed</p>
+                    <p className="mt-3 text-sm opacity-90">
+                      We typically respond within 24 hours, Monday to Saturday.
+                    </p>
+                  </div>
                 </div>
-                <div className="space-y-2 text-sm">
-                  <p><strong>Kathmandu Time (GMT+5:45)</strong></p>
-                  <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-                  <p>Saturday: 10:00 AM - 4:00 PM</p>
-                  <p>Sunday: Closed</p>
-                  <p className="mt-3 text-sm opacity-90">
-                    We typically respond within 24 hours, Monday to Saturday.
+
+                <div className="bg-gradient-to-r from-[#1E3A8A] to-[#1E40AF] rounded-2xl p-6 text-white">
+                  <h4 className="font-bold mb-3">Need Quick Help?</h4>
+                  <p className="text-sm mb-4 opacity-90">
+                    Chat with our travel experts instantly on WhatsApp for immediate assistance.
                   </p>
+                  <a
+                    href="https://wa.me/9779801234567"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center rounded-full bg-white px-4 py-2 text-sm font-semibold text-[#1E3A8A] transition-all hover:scale-105"
+                  >
+                    Chat on WhatsApp
+                  </a>
                 </div>
-              </div>
-              
-              <div className="bg-gradient-to-r from-[#1E3A8A] to-[#1E40AF] rounded-2xl p-6 text-white">
-                <h4 className="font-bold mb-3">Need Quick Help?</h4>
-                <p className="text-sm mb-4 opacity-90">
-                  Chat with our travel experts instantly on WhatsApp for immediate assistance.
-                </p>
-                <a
-                  href="https://wa.me/9779801234567"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center rounded-full bg-white px-4 py-2 text-sm font-semibold text-[#1E3A8A] transition-all hover:scale-105"
-                >
-                  Chat on WhatsApp
-                </a>
               </div>
             </div>
           </div>
